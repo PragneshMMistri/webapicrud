@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapicrud", "webapicrud\webapicrud.csproj", "{2415B47B-F90E-4002-8653-422E11872A0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2415B47B-F90E-4002-8653-422E11872A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2415B47B-F90E-4002-8653-422E11872A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2415B47B-F90E-4002-8653-422E11872A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2415B47B-F90E-4002-8653-422E11872A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC945A7-43F9-4756-87AE-2C24A7DDD640}
+	EndGlobalSection
+EndGlobal
