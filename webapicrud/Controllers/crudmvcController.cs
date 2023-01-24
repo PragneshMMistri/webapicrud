@@ -92,5 +92,37 @@ namespace webapicrud.Controllers
             return View("edit");
         }
 
+       
+        public ActionResult delete(int id)
+        {
+            Employee e = null;
+            client.BaseAddress = new Uri("https://localhost:44375/api/Crudapi");
+            var responce = client.GetAsync("Crudapi?id=" + id.ToString());
+            responce.Wait();
+            var test = responce.Result;
+            if (test.IsSuccessStatusCode)
+            {
+                var display = test.Content.ReadAsAsync<Employee>();
+                display.Wait();
+                e = display.Result;
+            }
+            return View(e);
         }
-    }
+        [HttpPost, ActionName("Delete") ]
+        public ActionResult deleteconfirm(int id)
+        {
+
+            client.BaseAddress = new Uri("https://localhost:44375/api/Crudapi");
+            var responce = client.DeleteAsync("Crudapi/" + id.ToString() );
+            responce.Wait();
+            var test = responce.Result;
+            if (test.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Delete");
+
+
+        }
+        }
+}

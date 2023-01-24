@@ -267,6 +267,7 @@
     <Content Include="Views\crudmvc\create.cshtml" />
     <Content Include="Views\crudmvc\details.cshtml" />
     <Content Include="Views\crudmvc\edit.cshtml" />
+    <Content Include="Views\crudmvc\delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

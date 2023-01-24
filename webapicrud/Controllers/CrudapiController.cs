@@ -59,5 +59,16 @@ namespace webapicrud.Controllers
 
                 return Ok();
         }
+
+        [System.Web.Http.HttpDelete]
+        public IHttpActionResult empdelete(int id)
+        {
+            var emp = db.Employees.Where(Model => Model.id == id).FirstOrDefault();
+
+            db.Entry(emp).State = System.Data.Entity.EntityState.Deleted;
+            db.SaveChanges();
+            return Ok();
+        }
+
     }
 }
